@@ -1,25 +1,25 @@
 /* ---------- Тексты (русский / узбекский) ---------- */
 const T = {
   ru: {
-    tap: "Нажмите, чтобы открыть", lead: "Приглашение на свадьбу",
+    tap: "Нажмите, чтобы открыть", lead: "Приглашаем вас на свадьбу наших детей",
     invite: "Дорогие родные и друзья! Будем счастливы видеть вас на нашем свадебном торжестве.",
     date: "31 октября 2026", start: "Начать историю", ph: "Здесь будет ваше фото",
     until: "До свадьбы", days: "дней", hours: "часов", mins: "минут", secs: "секунд",
     month: "Октябрь 2026", at: "Свадьба в 18:00", where: "Место проведения",
     yandex: "Яндекс Карты", google: "Google Maps", thanks: "Спасибо!",
     thx2: "С нетерпением ждём возможности отметить этот долгожданный день вместе с вами.",
-    regards: "С любовью и уважением", sign: "семья Турсуновых & Рахматовых",
+    regards: "С любовью и уважением", sign: '<span>Семья Турсуновых</span><span class="and">&amp;</span><span>Сафаевых</span>',
     wd: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
   },
   uz: {
-    tap: "Ochish uchun bosing", lead: "Nikoh toʻyiga taklifnoma",
+    tap: "Ochish uchun bosing", lead: "FArzandlarimizni nikoh toʻyiga taklif qulamiz",
     invite: "Aziz yaqinlarimiz va doʻstlarimiz! Sizni toʻyimizda koʻrsak xursand boʻlamiz.",
     date: "31 oktyabr 2026", start: "Hikoyani boshlash", ph: "Bu yerda sizning suratingiz boʻladi",
     until: "Toʻygacha", days: "kun", hours: "soat", mins: "daqiqa", secs: "soniya",
     month: "Oktyabr 2026", at: "Toʻy soat 18:00 da", where: "Toʻy oʻtkaziladigan joy",
     yandex: "Yandeks xarita", google: "Google Maps", thanks: "Rahmat!",
     thx2: "Bu kunni siz bilan birga nishonlashni intiqlik bilan kutamiz.",
-    regards: "Mehr va hurmat bilan", sign: "Tursunovlar & Rahmatovlar oilasi",
+    regards: "Mehr va hurmat bilan", sign: '<span>Tursunovlar</span><span class="and">&amp;</span><span>Safayevlar oilasi</span>',
     wd: ["Du", "Se", "Chor", "Pay", "Ju", "Sha", "Yak"]
   }
 };
@@ -29,7 +29,7 @@ let lang = "ru";
 function render() {
   document.documentElement.lang = lang;
   document.querySelectorAll("[data-i]").forEach(el => {
-    el.textContent = T[lang][el.dataset.i];
+   el.innerHTML = T[lang][el.dataset.i];
   });
   // календарь: октябрь 2026 начинается с четверга (3 пустые клетки при неделе с понедельника)
   const days = Array.from({ length: 31 }, (_, k) =>
