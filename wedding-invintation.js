@@ -8,18 +8,18 @@ const T = {
     month: "Октябрь 2026", at: "Свадьба в 18:00", where: "Место проведения",
     yandex: "Яндекс Карты", google: "Google Maps", thanks: "Спасибо!",
     thx2: "С нетерпением ждём возможности отметить этот долгожданный день вместе с вами.",
-    regards: "С любовью и уважением", sign: '<span>Семья Турсуновых</span><span class="and">&amp;</span><span>Сафаевых</span>',
+    regards: "С любовью и уважением", sign: '<span>Семья Турсуновых</span><span class="and">&amp;</span><span>Рахматовых</span>',
     wd: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
   },
   uz: {
-    tap: "Ochish uchun bosing", lead: "FArzandlarimizni nikoh toʻyiga taklif qulamiz",
+    tap: "Ochish uchun bosing", lead: "Farzandlarimizning nikoh toʻyiga sizni taklif qilamiz",
     invite: "Aziz yaqinlarimiz va doʻstlarimiz! Sizni toʻyimizda koʻrsak xursand boʻlamiz.",
     date: "31 oktyabr 2026", start: "Hikoyani boshlash", ph: "Bu yerda sizning suratingiz boʻladi",
     until: "Toʻygacha", days: "kun", hours: "soat", mins: "daqiqa", secs: "soniya",
     month: "Oktyabr 2026", at: "Toʻy soat 18:00 da", where: "Toʻy oʻtkaziladigan joy",
     yandex: "Yandeks xarita", google: "Google Maps", thanks: "Rahmat!",
     thx2: "Bu kunni siz bilan birga nishonlashni intiqlik bilan kutamiz.",
-    regards: "Mehr va hurmat bilan", sign: '<span>Tursunovlar</span><span class="and">&amp;</span><span>Safayevlar oilasi</span>',
+    regards: "Mehr va hurmat bilan", sign: '<span>Tursunovlar</span><span class="and">&amp;</span><span>Rahmatovlar oilasi</span>',
     wd: ["Du", "Se", "Chor", "Pay", "Ju", "Sha", "Yak"]
   }
 };
