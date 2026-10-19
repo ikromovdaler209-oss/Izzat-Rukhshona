@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Иззат & Рухшона — приглашение на свадьбу</title>
+<script>document.documentElement.classList.add("js")</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Marck+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="Wedding-invintation.css">
+</head>
+<body class="locked">
+
+<div class="lang" role="group" aria-label="Язык / Til">
+  <button data-l="ru" aria-pressed="true">РУ</button><button data-l="uz" aria-pressed="false">UZ</button>
+</div>
+
+<div id="env" role="button" tabindex="0" aria-label="Открыть приглашение">
+  <div class="envelope"><div class="flap"></div><div class="seal script">И&amp;Р</div></div>
+  <div class="tap" data-i="tap">Нажмите, чтобы открыть</div>
+</div>
+
+<section class="hero">
+  <div class="sm reveal hero-r" style="--d:.1s" data-i="lead">Приглашение на свадьбу</div>
+  <h1 class="script reveal hero-r" style="--d:.25s">Иззат <span>&amp;</span> Рухшона</h1> 
+  <div class="photo photo--arch reveal hero-r" style="--d:.4s">
+    <span class="ph" data-i="ph">Здесь будет ваше фото</span>
+    <img src="rings.PNG" alt="Иззат и Рухшона">
+  </div>
+
+  <p class="invite reveal hero-r" style="--d:.55s" data-i="invite">Дорогие родные и друзья! Будем счастливы видеть вас на нашем свадебном торжестве.</p>
+  <div class="date script reveal hero-r" style="--d:.7s" data-i="date">31 октября 2026</div>
+  <a class="btn reveal hero-r" style="--d:.85s" href="#count" data-i="start">Начать историю</a>
+</section>
+
+<section id="count" class="white">
+  <h2 class="reveal" data-i="until">До свадьбы</h2>
+  <div class="cd reveal" style="--d:.15s">
+    <div><b id="d">0</b><small data-i="days">дней</small></div>
+    <div><b id="h">0</b><small data-i="hours">часов</small></div>
+    <div><b id="m">0</b><small data-i="mins">минут</small></div>
+    <div><b id="s">0</b><small data-i="secs">секунд</small></div>
+  </div>
+</section>
+
+<section>
+  <h2 class="reveal" data-i="month">Октябрь 2026</h2>
+  <div class="cal reveal" style="--d:.15s" id="cal"></div>
+  <div class="at script reveal" style="--d:.3s" data-i="at">Свадьба в 18:00</div>
+</section>
+
+<section class="white venue">
+  <div class="photo photo--wide reveal">
+    <img src="Amir.jpg" alt="Amir">
+    <span class="ph" data-i="ph">Здесь будет ваше фото</span>
+  </div>
+
+  <h2 class="reveal" style="--d:.1s" data-i="where">Место проведения</h2>
+  <div class="vn script reveal" style="--d:.2s">Amir</div>
+  <p class="addr reveal" style="--d:.3s">Bogi Temur mahalla fuqarolar yigʻini,<br>Lutfiy koʻchasi, 124</p>
+  <div class="btns reveal" style="--d:.4s">
+    <a class="btn" target="_blank" rel="noopener" href="https://yandex.com/maps/org/amir/189815786937?si=w28mpzkdn61tqj5crg475a0chg" data-i="yandex">Яндекс Карты</a>
+    <a class="btn alt" target="_blank" rel="noopener" href="https://www.google.com/maps/search/Amir+Lutfiy+koʻchasi+124" data-i="google">Google Maps</a>
+  </div>
+</section>
+
+<section class="end">
+  <h2 class="reveal" data-i="thanks">Спасибо!</h2>
+  <p class="reveal" style="--d:.15s" data-i="thx2">С нетерпением ждём возможности отметить этот долгожданный день вместе с вами.</p>
+  <div class="sm reveal" style="--d:.3s" data-i="regards">С любовью и уважением</div>
+  <div class="sign script reveal" style="--d:.4s" data-i="sign">семья Турсуновых &amp; Рахматовых</div>
+</section>
+
+<script src="wedding-invintation.js"></script>
+</body>
+</html>
